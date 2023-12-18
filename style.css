@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background: rgb(63,143,251);
+    background: linear-gradient(90deg, rgba(63,143,251,1) 2%, rgba(49,32,174,0.8772759103641457) 67%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.myDiv{
+    text-align: center;
+    width: 500px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color:rgb(223, 240, 255);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.myDiv h1{
+    color: rgb(7, 103, 130);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.myDiv input{
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 255, 0.3);
+    background: transparent;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.myDiv input:focus{
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.myDiv button{
+    cursor: pointer;
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: rgb(5, 103, 215);
+}
+.myDiv button:hover{
+    background-color: rgb(57, 172, 229);
+}
+ul{
+    list-style: none;
+    padding: 10px;
+}
+ul li{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(140, 190, 203);
+    margin-left: 27px;
+    padding-left: 10px;
+    align-items: center;
+    width: 415px;
+    border: 1px solid rgb(186, 206, 211);
+}
+ul li.checked{
+    background-color: rgb(90, 181, 216);
+    text-decoration: line-through ;
+}
+
+.close{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 119, 163);
+}
+.close:hover{
+    background-color: rgb(57, 172, 229);
+}

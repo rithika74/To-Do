@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="myDiv">
+        <h1>ToDo List</h1>
+        <input type="text" id="txt" placeholder="add task here...">
+        <button id="btn" onclick="myFn()">Add</button>
+        <ul id="list"></ul>
+    </div>
+
+    <script>
+        function myFn() {
+            let text = document.getElementById('txt');
+            let list = document.getElementById('list'); 
+            if (text.value.trim() === "") {
+                alert("Please add any tasks!!");
+            }
+            else{
+                let textadd = document.createElement("li");
+                textadd.innerHTML = text.value;
+
+                let span = document.createElement("span");
+                span.innerHTML = "\u00D7";
+                span.setAttribute("class", "close");
+
+                textadd.appendChild(span);
+                list.appendChild(textadd);
+
+                span.addEventListener("click", function () {
+                    textadd.remove();
+                });
+
+                textadd.addEventListener("click", function () {
+                    textadd.classList.toggle('checked');
+                });
+
+            }
+            text.value="";
+        }
+
+    </script>
+</body>
+</html>
